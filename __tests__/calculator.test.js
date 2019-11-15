@@ -1,4 +1,4 @@
-import { AgeCalculator } from './../src/calculator';
+import { AgeCalculator } from '../src/calculator';
 
 describe('AgeCalculator', () => {
 
@@ -8,7 +8,7 @@ describe('AgeCalculator', () => {
 });
   test('should correctly convert age into mercury years', function () {
     var ageCalculator = new AgeCalculator(99.6);
-    expect(ageCalculator.Mercury()).toEqual(99.6);
+    expect(ageCalculator.Mercury()).toEqual((99.6).toFixed(1));
 });
 
 
