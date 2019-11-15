@@ -1,10 +1,11 @@
 export class AgeCalculator {
-  constructor(earthYears){
-    this.earthYears = earthYears;
+  constructor(earthAge){
+    this.earthAge = earthAge;  
   }
 
-  mercuryAge(earthYears) {
-  
+  Earth(earthAge) {
+  const EarthYearDays = 365; 
+  return earthAge * EarthYearDays;
 }
 
 
