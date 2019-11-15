@@ -10,6 +10,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(99.6);
     expect(ageCalculator.Mercury()).toEqual((99.6).toFixed(1));
 });
-
+  test('should correctly convert age into venus years', function (){
+    var ageCalculator = new AgeCalculator(39);
+    expect(ageCalculator.Venus()).toEqual((39).toFixed());
+  });
 
 });
