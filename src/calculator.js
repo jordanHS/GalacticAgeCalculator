@@ -1,5 +1,15 @@
-export function AgeCalculator(earthYears) {
-  this.earthYears = earthYears;
+export class AgeCalculator {
+  constructor(earthYears){
+    this.earthYears = earthYears;
+  }
+
+  mercuryAge(earthYears) {
+  
+}
+
+
+
+
 }
 
 
