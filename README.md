@@ -4,7 +4,7 @@
 
 ### by Jordan Safford
 
-## Description 
+## Description
 
 A calculator for determining the users age on other planets.
 
@@ -21,9 +21,8 @@ A calculator for determining the users age on other planets.
 
 ## Setup/Installation requirements
 
-* Click HTML file to open in browser.
-* Enter your name & the number you want the machine to count to.
-* Click submit button to generate sequence.
+* Clone repo to desktop
+* Open in browser.
 
 ## Known Bugs
 
