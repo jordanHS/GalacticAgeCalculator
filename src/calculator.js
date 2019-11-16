@@ -4,13 +4,13 @@ export class AgeCalculator {
     this.lifeExpectancy = lifeExpectancy;
 }                                         
 
-  Mercury(age) {
+  Mercury() {
   const earthYearDays = 365;
   let mercuryYear = earthYearDays * .24;
   return ((mercuryYear * 24) / 21.11).toFixed(1);
 }
 
-  Venus(age) {
+  Venus() {
     const earthYearDays = 365;
     let venusYear = earthYearDays * .62;
     return ((venusYear * 24)/ 139.26).toFixed();
