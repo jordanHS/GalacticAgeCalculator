@@ -1,6 +1,7 @@
 export class AgeCalculator {
-  constructor(age){
+  constructor(age, lifeExpectancy){
     this.age = age;
+    this.lifeExpectancy = lifeExpectancy;
 }                                         
 
   Mercury(age) {
@@ -15,6 +16,17 @@ export class AgeCalculator {
     return ((venusYear * 24)/ 139.26).toFixed();
   }
 
+  Mars() {
+    const earthYearDays = 365;
+    let marsYear = earthYearDays * 1.88;
+    return ((marsYear * 24) / 1296.76).toFixed(1);
+  }    
+
+  Jupiter() {
+    const earthYearDays = 365;
+    let jupiterYear = earthYearDays * 11.86;
+    return((jupiterYear * 24) / 51432.48).toFixed(2);
+  }
 
 }
 
