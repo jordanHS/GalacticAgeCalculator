@@ -8,18 +8,18 @@ describe('AgeCalculator', () => {
 });
   test('should correctly convert age into mercury years', function () {
     var ageCalculator = new AgeCalculator(99.6);
-    expect(ageCalculator.Mercury()).toEqual((99.6).toFixed(1));
+    expect(ageCalculator.Mercury()).toEqual("99.6");
 });
   test('should correctly convert age into venus years', function () {
     var ageCalculator = new AgeCalculator(39);
-    expect(ageCalculator.Venus()).toEqual((39).toFixed());
+    expect(ageCalculator.Venus()).toEqual("39");
   });
   test('should correctly convert age into mars years', function () {
     var ageCalculator = new AgeCalculator(12.7);
-    expect(ageCalculator.Mars()).toEqual((12.7).toFixed(1));
+    expect(ageCalculator.Mars()).toEqual("12.7");
   });
   test('should correclty convert age into jupiter years', function () {
     var ageCalculator = new AgeCalculator(2.02);
-    expect(ageCalculator.Jupiter()).toEqual((2.02).toFixed(2));
+    expect(ageCalculator.Jupiter()).toEqual("2.02");
   });
 });
