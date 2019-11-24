@@ -18,7 +18,7 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(12.7);
     expect(ageCalculator.Mars()).toEqual("12.7");
   });
-  test('should correclty convert age into jupiter years', function () {
+  test('should correctly convert age into jupiter years', function () {
     var ageCalculator = new AgeCalculator(2.02);
     expect(ageCalculator.Jupiter()).toEqual("2.02");
   });
