@@ -1,10 +1,10 @@
 import { AgeCalculator } from '../src/calculator';
 
 describe('AgeCalculator', () => {
-
-  test('should correctly create object for users age', () => {
-    var ageCalculator = new AgeCalculator(24);
-    expect(ageCalculator.age).toEqual(24);
+  
+  test('should correctly test for value of current date', function () {
+    var ageCalculator = new AgeCalculator(11, 24, 1995);
+    expect(ageCalculator.currentDate).toBe(11, 24, 1995);
 });
   test('should correctly convert age into mercury years', function () {
     var ageCalculator = new AgeCalculator(99.6);
@@ -22,4 +22,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(2.02);
     expect(ageCalculator.Jupiter()).toEqual("2.02");
   });
+  // test('should determine how many years the user has left on earth', function () {
+  //   var ageCalculator = new AgeCalculator(54.69);
+  //   expect(ageCalculator.LifeExpectancy()).toEqual("54.69");
+  // });
+
 });

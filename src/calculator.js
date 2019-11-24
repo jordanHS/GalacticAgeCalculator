@@ -1,8 +1,20 @@
 export class AgeCalculator {
-  constructor(age, lifeExpectancy){
-    this.age = age;
-    this.lifeExpectancy = lifeExpectancy;
-}                                         
+  constructor(currentDate, dateofBirth) {
+    this.currentDate = currentDate;
+    this.dateOfBirth = dateofBirth;
+  }          
+
+ userAge(DOB) {
+  let currentDate = new Date();
+  let dateOfBirth = new Date(DOB);
+  const age = currentDate.getFullYear() - dateOfBirth.getDate();
+  let months = currentDate.getMonth() - dateOfBirth.getMonth();
+  if (months < 0 || (months === 0 && currentDate.getDate() < dateOfBirth.getDate())) {
+    age = age -1;
+  }
+  return age
+ }
+  
 
   Mercury() {
   const earthYearDays = 365;
@@ -28,8 +40,6 @@ export class AgeCalculator {
     return((jupiterYear * 24) / 51432.48).toFixed(2);
   }
 
+
+
 }
-
-
-
-
