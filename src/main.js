@@ -2,7 +2,6 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import $ from 'jquery';
 import { AgeCalculator } from './calculator.js';
 
 
@@ -13,8 +12,11 @@ $(document).ready(function() {
         event.preventDefault();
         
         let currentDay = parseInt($("#currentDay").val());
-        let currentMonth = parseInt($("#currentMonth").val());
-        let currentYear = parseInt($("currentYear").val());
+        let currentMonthNum = parseInt($("#currentMonthNum").val());
+        let currentYear = parseInt($("#currentYear").val());
+        // let birthday = parseInt($("#birthday").val());
+        console.log(currentMonthNum, currentYear);
+        let ageCalculator = new AgeCalculator(currentDay, currentMonthNum, currentYear, birthday);
 
 
 
