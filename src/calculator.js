@@ -5,23 +5,23 @@ export class AgeCalculator {
     this.currentYear = currentYear;
   }          
 
-//  userAge(DOB) {
-//   let currentDate = new Date();
-//   let dateOfBirth = new Date(DOB);
-//   const age = currentDate.getFullYear() - dateOfBirth.getDate();
-//   let months = currentDate.getMonth() - dateOfBirth.getMonth();
-//   if (months < 0 || (months === 0 && currentDate.getDate() < dateOfBirth.getDate())) {
-//     age = age -1;
-//   }
-//   return age
-//  }
+ userAge(DOB) {
+  let currentDate = new Date();
+  let dateOfBirth = new Date(DOB);
+  let age = currentDate.getFullYear() - dateOfBirth.getFullYear();
+  let months = currentDate.getMonth() - dateOfBirth.getMonth();
+  if (months < 0 || (months === 0 && currentDate.getDate() < dateOfBirth.getDate())) {
+    age = age - 1;
+  }
+  return age
+ }
   
 
-//   Mercury() {
-//   const earthYearDays = 365;
-//   let mercuryYear = earthYearDays * .24;
-//   return ((mercuryYear * 24) / 21.11).toFixed(1);
-// }
+  Mercury(age) {
+  const earthAge = userAge();
+  let mercuryYear = .24;
+  return (age / mercuryYear).toFixed(1);
+}
 
 //   Venus() {
 //     const earthYearDays = 365;

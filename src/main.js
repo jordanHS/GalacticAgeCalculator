@@ -12,15 +12,18 @@ $(document).ready(function() {
     $("#calculator").submit(function() {
         event.preventDefault();
         
-        let currentDate = new Date();
-        let currentDay = currentDate.getDate();
-        let currentMonth = currentDate.getMonth();
-        let currentYear = currentDate.getFullYear();
+        let currentDay = parseInt($("#currentDay").val());
+        let currentMonth = parseInt($("#currentMonth").val());
+        let currentYear = parseInt($("currentYear").val());
 
 
 
         
-    }
+
+
+
+        
+    });
 
 
 
