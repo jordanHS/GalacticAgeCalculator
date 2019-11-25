@@ -16,7 +16,8 @@ $(document).ready(function() {
         let dateOfBirth = $("#dateOfBirth").val();
 
 
-        let ageCalculator = new AgeCalculator(currentDate, dateOfBirth)
+        let ageCalculator = new AgeCalculator(currentDate, dateOfBirth);
+
     }
 
 
