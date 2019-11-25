@@ -2,14 +2,14 @@ import { AgeCalculator } from '../src/calculator';
 
 describe('AgeCalculator', () => {
   
-  test('should correctly test for value of current date', function () {
-    var ageCalculator = new AgeCalculator(11/24/2019);
-    expect(ageCalculator.currentDate).toBe(11/24/2019);
+  test('should retrieve the current day', function () {
+    var ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.currentDay).toEqual(24);
 });
-  test('should correctly test for value of users date of birth' , function () {
-    var ageCalculator = new AgeCalculator(11, 1, 1995);
-    expect(ageCalculator.dateOfBirth).toEqual(11, 1, 1995);
-  });
+  // test('should correctly test for value of users date of birth' , function () {
+  //   var ageCalculator = new AgeCalculator(11, 1, 1995);
+  //   expect(ageCalculator.dateOfBirth).toEqual(11, 1, 1995);
+  // });
 //   test('should correctly convert age into mercury years', function () {
 //     var ageCalculator = new AgeCalculator(99.6);
 //     expect(ageCalculator.Mercury()).toEqual("99.6");

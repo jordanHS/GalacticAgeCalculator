@@ -12,12 +12,14 @@ $(document).ready(function() {
     $("#calculator").submit(function() {
         event.preventDefault();
         
-        let currentDate = $("#currentDate").val();
-        let dateOfBirth = $("#dateOfBirth").val();
+        let currentDate = new Date();
+        let currentDay = currentDate.getDate();
+        let currentMonth = currentDate.getMonth();
+        let currentYear = currentDate.getFullYear();
 
 
-        let ageCalculator = new AgeCalculator(currentDate, dateOfBirth);
 
+        
     }
 
 
