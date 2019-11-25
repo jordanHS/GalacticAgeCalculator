@@ -4,29 +4,22 @@
     <title>Galactic Age Calculator</title>
   </head>
   <body>
+    <div class="container">
     <h1>Galactic Calculator</h1>
     <p>Find out your age on other planets!</p>
-    <div class="container">
+   
 
       <form id="calculator">
         <div class="form-group">
-          <label for="currentDay">Day:</label>
-          <input type="number" id="currentDay" required>
+          <label for="currentDate">Current date:</label>
+          <input id="currentDate" class="form-control" type="date">
         </div>
         <div class="form-group">
-          <label for="currentMonthNum">Current Month Number:</label>
-          <input type="number" id="currentMonthNum" required>
-        </div>
-        <div class="form-group">
-          <label for="currentYear">Current Year:</label>
-          <input type="number" id="currentYear" required>
+          <label for="dateOfBirth">Date of birth:</label>
+          <input type="date" class="form-control" id="dateOfBirth">
         </div>
         <button type="submit" class="btn btn-success">Calculate!</button>
       </form>
-      <div class="form-group">
-        <label for="birthday">Birthday:</label>
-        <input type="number" id="birthday" required>
-      </div>
       <div class="result">
         
       </div>

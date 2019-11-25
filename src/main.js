@@ -11,12 +11,13 @@ $(document).ready(function() {
     $("#calculator").submit(function() {
         event.preventDefault();
         
-        let currentDay = parseInt($("#currentDay").val());
-        let currentMonthNum = parseInt($("#currentMonthNum").val());
-        let currentYear = parseInt($("#currentYear").val());
-        // let birthday = parseInt($("#birthday").val());
-        console.log(currentMonthNum, currentYear);
-        let ageCalculator = new AgeCalculator(currentDay, currentMonthNum, currentYear, birthday);
+        let currentDate = $("#currentDate").val();
+        let dateOfBirth = $("#dateOfBirth").val();
+        
+       
+        console.log(currentDate);
+        console.log(dateOfBirth)
+        let ageCalculator = new AgeCalculator(currentDate, dateOfBirth);
 
 
 

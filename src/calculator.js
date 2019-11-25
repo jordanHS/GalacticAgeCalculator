@@ -1,8 +1,7 @@
 export class AgeCalculator {
-  constructor(currentDay, currentMonthNum, currentYear) {
-    this.currentDay = currentDay;
-    this.currentMonthNum = currentMonthNum;
-    this.currentYear = currentYear;
+  constructor(currentDate, dateOfBirth) {
+    this.currentDate = currentDate;
+    this.dateOfBirth = dateOfBirth;
   }          
 
 //  userAge(DOB) {
