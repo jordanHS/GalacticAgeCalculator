@@ -19,5 +19,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(54,69);
     expect(78.69 - 24).toEqual(54.69);
   });
+  test('should determine if the user has lived past the life expectancy', function  () {
+    var ageCalculator = new AgeCalculator(true);
+    expect(80 > 78.69).toBe(true);
+  }); 
 });
 
