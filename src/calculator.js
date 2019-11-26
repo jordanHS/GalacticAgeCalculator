@@ -6,7 +6,7 @@ export class AgeCalculator {
   }          
 
  userAge(currentYear, birthYear) {
-   let age = currentYear - birthYear;
+   let age = parseInt(currentYear) - parseInt(birthYear)
     return age;
   }
 
