@@ -12,10 +12,12 @@ export class AgeCalculator {
 
   userLifeExpectancy(age) {
     const avExpectancy = 78.69;
-    let yearsLeft = avExpectancy - age;
-    return yearsLeft;
+    if (age < avExpectancy) {
+    return avExpectancy - age;
+    } else { 
+    return age - avExpectancy;
   }
-
+  }
 
 //   Mercury(age) {
 //   const earthAge = age;
