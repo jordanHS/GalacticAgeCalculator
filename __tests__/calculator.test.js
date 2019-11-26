@@ -11,4 +11,8 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(25-11-2019, 1995-11-1);
     expect(ageCalculator.dateOfBirth).toEqual(1995-11-1);
   });
+  test('should correctly calculate users age', function () {
+    var ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.userAge()).toEqual(24);
+  });
 });

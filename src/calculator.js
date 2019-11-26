@@ -1,20 +1,19 @@
+
 export class AgeCalculator {
   constructor(currentDate, dateOfBirth) {
     this.currentDate = currentDate;
     this.dateOfBirth = dateOfBirth;
   }          
 
-//  userAge(DOB) {
-//   let currentDate = new Date();
-//   let dateOfBirth = new Date(DOB);
-//   let age = currentDate.getFullYear() - dateOfBirth.getFullYear();
-//   let months = currentDate.getMonth() - dateOfBirth.getMonth();
-//   if (months < 0 || (months === 0 && currentDate.getDate() < dateOfBirth.getDate())) {
-//     age = age - 1;
-//   }
-//   return age
-//  }
-  
+ userAge(currentDate, dateOfBirth) {
+  let dateInts = currentDate.split("-")
+  let currentYear = dateInts.shift();
+  let birthDateInts = dateOfBirth.split("-");
+  let birthYear = birthDateInts.shift();
+   let age = currentYear - birthYear;
+    return age;
+  }
+
 
 //   Mercury(age) {
 //   const earthAge = userAge();
