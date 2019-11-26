@@ -6,18 +6,16 @@ export class AgeCalculator {
   }          
 
  userAge() {
-   let age = this.currentYear - this.birthYear
+   const age = this.currentYear - this.birthYear
     return age;
   }
 
-  // userLifeExpectancy(age) {
-  //   const avExpectancy = 78.69;
-  //   if (age < avExpectancy) {
-  //   return avExpectancy - age;
-  //   } else { 
-  //   return age - avExpectancy;
-  // }
-  // }
+  userLifeExpectancy() {
+    const avExpectancy = 78.69;
+    const age = this.currentYear - this.birthYear;
+   return avExpectancy - age;
+  }
+
 
 //   Mercury(age) {
 //   const earthAge = age;
