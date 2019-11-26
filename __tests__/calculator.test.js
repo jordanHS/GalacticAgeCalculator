@@ -19,12 +19,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(2019, 1995);
     expect(ageCalculator.userLifeExpectancy()).toEqual(54.69);
   });
-  // test('should determine if the user has lived past the life expectancy', function  () {
-  //   var ageCalculator = new AgeCalculator(true);
-  //   expect(age > 78.69).toBe(true);
-  // });
-  // test('should convert users age into mercury years', function () {
-  //   var ageCalculator = new AgeCalculator()
-  // }); 
+  test('should convert users age into mercury years', function () {
+    var ageCalculator = new AgeCalculator(2019, 1995);
+    expect(ageCalculator.Mercury()).toEqual(100);
+  }); 
 });
 

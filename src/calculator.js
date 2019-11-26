@@ -13,16 +13,23 @@ export class AgeCalculator {
   userLifeExpectancy() {
     const avExpectancy = 78.69;
     const age = this.currentYear - this.birthYear;
-   return avExpectancy - age;
+    if (age < avExpectancy) {
+    return avExpectancy - age; 
+  } else {
+    return age - avExpectancy;
   }
+}
 
-
-//   Mercury(age) {
-//   const earthAge = age;
-//   let mercuryYear = .24;
-//   return (age / mercuryYear).toFixed(1);
-// }
-
+  Mercury() {
+  const mercuryExpectancy = 327.88;
+  const age = this.currentYear - this.birthYear;
+  let mercuryAge = age / .24;
+  if (mercuryExpectancy > mercuryAge) {
+    return mercuryExpectancy - mercuryAge;
+  } else {
+    return mercuryAge - mercuryExpectancy;
+  }
+}
 //   Venus() {
 //     const earthYearDays = 365;
 //     let venusYear = earthYearDays * .62;
