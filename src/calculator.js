@@ -1,22 +1,18 @@
 
 export class AgeCalculator {
-  constructor(currentDate, dateOfBirth) {
-    this.currentDate = currentDate;
-    this.dateOfBirth = dateOfBirth;
+  constructor(currentYear, birthYear) {
+    this.currentYear = currentYear;
+    this.birthYear = birthYear;
   }          
 
- userAge(currentDate, dateOfBirth) {
-  let dateInts = currentDate.split("-")
-  let currentYear = dateInts.shift();
-  let birthDateInts = dateOfBirth.split("-");
-  let birthYear = birthDateInts.shift();
+ userAge(currentYear, birthYear) {
    let age = currentYear - birthYear;
     return age;
   }
 
 
 //   Mercury(age) {
-//   const earthAge = userAge();
+//   const earthAge = age;
 //   let mercuryYear = .24;
 //   return (age / mercuryYear).toFixed(1);
 // }
