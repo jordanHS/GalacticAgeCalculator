@@ -5,19 +5,19 @@ export class AgeCalculator {
     this.birthYear = birthYear;
   }          
 
- userAge(currentYear, birthYear) {
-   let age = parseInt(currentYear) - parseInt(birthYear)
+ userAge() {
+   let age = this.currentYear - this.birthYear
     return age;
   }
 
-  userLifeExpectancy(age) {
-    const avExpectancy = 78.69;
-    if (age < avExpectancy) {
-    return avExpectancy - age;
-    } else { 
-    return age - avExpectancy;
-  }
-  }
+  // userLifeExpectancy(age) {
+  //   const avExpectancy = 78.69;
+  //   if (age < avExpectancy) {
+  //   return avExpectancy - age;
+  //   } else { 
+  //   return age - avExpectancy;
+  // }
+  // }
 
 //   Mercury(age) {
 //   const earthAge = age;

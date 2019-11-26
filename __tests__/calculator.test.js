@@ -13,15 +13,18 @@ describe('AgeCalculator', () => {
   });
   test('should correctly calculate users age', function () {
     var ageCalculator = new AgeCalculator(2019, 1995);
-    expect(2019 - 1995).toEqual(24);
+    expect(ageCalculator.userAge()).toEqual(24);
   });
-  test('should determine how many years left the user has', function () {
-    var ageCalculator = new AgeCalculator(54,69);
-    expect(78.69 - 24).toEqual(54.69);
-  });
-  test('should determine if the user has lived past the life expectancy', function  () {
-    var ageCalculator = new AgeCalculator(true);
-    expect(80 > 78.69).toBe(true);
-  }); 
+  // test('should determine how many years left the user has', function () {
+  //   var ageCalculator = new AgeCalculator(54,69);
+  //   expect(78.69 - 24).toEqual(54.69);
+  // });
+  // test('should determine if the user has lived past the life expectancy', function  () {
+  //   var ageCalculator = new AgeCalculator(true);
+  //   expect(age > 78.69).toBe(true);
+  // });
+  // test('should convert users age into mercury years', function () {
+  //   var ageCalculator = new AgeCalculator()
+  // }); 
 });
 
