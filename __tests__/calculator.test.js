@@ -21,7 +21,11 @@ describe('AgeCalculator', () => {
   });
   test('should convert users age into mercury years', function () {
     var ageCalculator = new AgeCalculator(2019, 1995);
-    expect(ageCalculator.Mercury()).toEqual(100);
+    expect(ageCalculator.MercuryYears()).toEqual(100);
   }); 
+  test('should determine the user life expectancy on mercury', function () {
+    var ageCalculator = new AgeCalculator(2019, 1995);
+    expect(ageCalculator.MercuryExpectancy()).toEqual(227.88);
+  });
 });
 

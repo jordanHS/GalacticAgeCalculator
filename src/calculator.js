@@ -20,11 +20,17 @@ export class AgeCalculator {
   }
 }
 
-  Mercury() {
-  const mercuryExpectancy = 327.88;
+  MercuryYears() {
   const age = this.currentYear - this.birthYear;
-  let mercuryAge = age / .24;
-  if (mercuryExpectancy > mercuryAge) {
+  const mercuryAge = age / .24;
+  return mercuryAge;
+  }
+
+  MercuryExpectancy() {
+    const age = this.currentYear - this.birthYear;
+    const mercuryAge = age / .24;
+    const mercuryExpectancy = 327.88;
+    if (mercuryExpectancy > mercuryAge) {
     return mercuryExpectancy - mercuryAge;
   } else {
     return mercuryAge - mercuryExpectancy;
