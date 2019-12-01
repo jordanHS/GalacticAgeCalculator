@@ -31,5 +31,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(2019, 1995);
     expect(ageCalculator.VenusYears()).toEqual("38.71");
   });
+  test('should determine the users life expectancy on venus', function () {
+    var ageCalculator = new AgeCalculator(2019, 1995);
+    expect(ageCalculator.VenusExpectancy()).toEqual(88.22);
+  });
 });
 

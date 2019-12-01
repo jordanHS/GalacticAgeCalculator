@@ -48,9 +48,9 @@ export class AgeCalculator {
       const venusAge = age / .62;
       let lifeExpectancy = 126.92;
       if (lifeExpectancy > venusAge) {
-        return lifeExpectancy - venusAge;
+        return lifeExpectancy - venusAge.toFixed(1);
       } else {
-        return lifeExpectancy - venusAge;
+        return venusAge.toFixed(2) - lifeExpectancy;
       }
     }
 
