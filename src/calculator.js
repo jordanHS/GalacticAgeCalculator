@@ -31,9 +31,9 @@ export class AgeCalculator {
     const mercuryAge = age / .24;
     let lifeExpectancy = 327.88;
     if (lifeExpectancy > mercuryAge) {
-    return lifeExpectancy - mercuryAge;
+      return lifeExpectancy - mercuryAge;
   } else {
-    return mercuryAge - lifeExpectancy;
+      return mercuryAge - lifeExpectancy;
   }
 }
   
@@ -48,9 +48,9 @@ export class AgeCalculator {
     const venusAge = age / .62;
     let lifeExpectancy = 126.92;
     if (lifeExpectancy > venusAge) {
-    return lifeExpectancy - venusAge.toFixed(1);
+      return lifeExpectancy - venusAge.toFixed(1);
     } else {
-    return venusAge.toFixed(1) - lifeExpectancy;
+      return venusAge.toFixed(1) - lifeExpectancy;
       }
     }
 
@@ -70,10 +70,10 @@ export class AgeCalculator {
       return marsAge.toFixed(2) - lifeExpectancy;
     }
   }
-    Jupiter() {
-    const earthYearDays = 365;
-    let jupiterYear = earthYearDays * 11.86;
-    return((jupiterYear * 24) / 51432.48).toFixed(2);
+    JupiterYears() {
+    const age = this.currentYear - this.birthYear;
+    const jupiterAge = age / 11.86;
+    return jupiterAge.toFixed(2);
   }
 
 
