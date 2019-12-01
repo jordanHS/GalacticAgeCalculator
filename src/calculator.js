@@ -11,12 +11,12 @@ export class AgeCalculator {
   }
 
   userLifeExpectancy() {
-    const avExpectancy = 78.69;
+    let lifeExpectancy = 78.69;
     const age = this.currentYear - this.birthYear;
-    if (age < avExpectancy) {
-    return avExpectancy - age; 
+    if (age < lifeExpectancy) {
+    return lifeExpectancy - age; 
   } else {
-    return age - avExpectancy;
+    return age - lifeExpectancy;
   }
 }
 
@@ -29,18 +29,30 @@ export class AgeCalculator {
   MercuryExpectancy() {
     const age = this.currentYear - this.birthYear;
     const mercuryAge = age / .24;
-    const mercuryExpectancy = 327.88;
-    if (mercuryExpectancy > mercuryAge) {
-    return mercuryExpectancy - mercuryAge;
+    let lifeExpectancy = 327.88;
+    if (lifeExpectancy > mercuryAge) {
+    return lifeExpectancy - mercuryAge;
   } else {
-    return mercuryAge - mercuryExpectancy;
+    return mercuryAge - lifeExpectancy;
   }
 }
-//   Venus() {
-//     const earthYearDays = 365;
-//     let venusYear = earthYearDays * .62;
-//     return ((venusYear * 24)/ 139.26).toFixed();
-//   }
+  
+  VenusYears() {
+    const age = this.currentYear - this.birthYear;
+    const venusAge = age / .62;
+    return venusAge.toFixed(2);
+    }
+
+    VenusExpectancy() {
+      const age = this.currentYear - this.birthYear;
+      const venusAge = age / .62;
+      let lifeExpectancy = 126.92;
+      if (lifeExpectancy > venusAge) {
+        return lifeExpectancy - venusAge;
+      } else {
+        return lifeExpectancy - venusAge;
+      }
+    }
 
 //   Mars() {
 //     const earthYearDays = 365;
