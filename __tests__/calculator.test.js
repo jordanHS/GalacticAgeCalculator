@@ -49,7 +49,7 @@ describe('AgeCalculator', () => {
   });
   test('should determine the users life expectancy on jupiter', function () {
     var ageCalculator = new AgeCalculator(2019, 1995);
-    expect(ageCalculator.JupiterExpectancy()).toEqual(4.61);
+    expect(ageCalculator.JupiterExpectancy()).toEqual(4.63);
   });
 });
 

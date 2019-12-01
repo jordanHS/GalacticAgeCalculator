@@ -78,7 +78,14 @@ export class AgeCalculator {
   }
 
   JupiterExpectancy() {
-    
+    const age = this.currentYear - this.birthYear;
+    const jupiterAge = age / 11.86;
+    let lifeExpectancy = 6.63;
+    if (lifeExpectancy > jupiterAge) {
+      return lifeExpectancy - jupiterAge.toFixed(1);
+    } else {
+      return jupiterAge.toFixed(1) - lifeExpectancy;
+    }
   }
 
 }
