@@ -70,12 +70,15 @@ export class AgeCalculator {
       return marsAge.toFixed(2) - lifeExpectancy;
     }
   }
-    JupiterYears() {
+    
+  JupiterYears() {
     const age = this.currentYear - this.birthYear;
     const jupiterAge = age / 11.86;
     return jupiterAge.toFixed(2);
   }
 
-
+  JupiterExpectancy() {
+    
+  }
 
 }
