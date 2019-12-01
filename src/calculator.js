@@ -50,7 +50,7 @@ export class AgeCalculator {
       if (lifeExpectancy > venusAge) {
         return lifeExpectancy - venusAge.toFixed(1);
       } else {
-        return venusAge.toFixed(2) - lifeExpectancy;
+        return venusAge.toFixed(1) - lifeExpectancy;
       }
     }
 
