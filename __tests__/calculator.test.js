@@ -41,7 +41,7 @@ describe('AgeCalculator', () => {
   });
   test('should determine the users life expectancy on mars', function() {
     var ageCalculator = new AgeCalculator(2019, 1995);
-    expect(ageCalculator.MarsExpectancy()).toEqual(29.1);
+    expect(ageCalculator.MarsExpectancy()).toEqual(29.09);
   });
 });
 

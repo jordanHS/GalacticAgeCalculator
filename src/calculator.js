@@ -61,7 +61,14 @@ export class AgeCalculator {
     }    
 
   MarsExpectancy() {
-    s
+    const age = this.currentYear - this.birthYear;
+    const marsAge = age / 1.88;
+    let lifeExpectancy = 41.86;
+    if (lifeExpectancy > marsAge) {
+      return lifeExpectancy - marsAge.toFixed(2);
+    } else {
+      return marsAge.toFixed(2) - lifeExpectancy;
+    }
   }
   //   Jupiter() {
 //     const earthYearDays = 365;
