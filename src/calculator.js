@@ -43,14 +43,14 @@ export class AgeCalculator {
     return venusAge.toFixed(2);
     }
 
-    VenusExpectancy() {
-      const age = this.currentYear - this.birthYear;
-      const venusAge = age / .62;
-      let lifeExpectancy = 126.92;
-      if (lifeExpectancy > venusAge) {
-        return lifeExpectancy - venusAge.toFixed(1);
-      } else {
-        return venusAge.toFixed(1) - lifeExpectancy;
+  VenusExpectancy() {
+    const age = this.currentYear - this.birthYear;
+    const venusAge = age / .62;
+    let lifeExpectancy = 126.92;
+    if (lifeExpectancy > venusAge) {
+    return lifeExpectancy - venusAge.toFixed(1);
+    } else {
+    return venusAge.toFixed(1) - lifeExpectancy;
       }
     }
 
@@ -58,9 +58,12 @@ export class AgeCalculator {
     const age = this.currentYear - this.birthYear;
     const marsAge = age / 1.88;
     return marsAge.toFixed(2);
-  }    
+    }    
 
-//   Jupiter() {
+  MarsExpectancy() {
+    s
+  }
+  //   Jupiter() {
 //     const earthYearDays = 365;
 //     let jupiterYear = earthYearDays * 11.86;
 //     return((jupiterYear * 24) / 51432.48).toFixed(2);
