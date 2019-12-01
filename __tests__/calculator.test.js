@@ -27,5 +27,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(2019, 1995);
     expect(ageCalculator.MercuryExpectancy()).toEqual(227.88);
   });
+  test('should convert the users age into venus years', function() {
+    var ageCalculator = new AgeCalculator(2019, 1995);
+    expect(ageCalculator.VemusYears()).toEqual(38.71);
+  }
 });
 
