@@ -43,5 +43,9 @@ describe('AgeCalculator', () => {
     var ageCalculator = new AgeCalculator(2019, 1995);
     expect(ageCalculator.MarsExpectancy()).toEqual(29.09);
   });
+  test('should convert the user age into jupiter years', function () {
+    var ageCalculator = new AgeCalculator(2019, 1995);
+    expect(ageCalculator.JupiterYears()).toEqual("2.02");
+  });
 });
 

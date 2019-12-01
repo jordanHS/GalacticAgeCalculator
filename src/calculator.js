@@ -70,11 +70,11 @@ export class AgeCalculator {
       return marsAge.toFixed(2) - lifeExpectancy;
     }
   }
-  //   Jupiter() {
-//     const earthYearDays = 365;
-//     let jupiterYear = earthYearDays * 11.86;
-//     return((jupiterYear * 24) / 51432.48).toFixed(2);
-//   }
+    Jupiter() {
+    const earthYearDays = 365;
+    let jupiterYear = earthYearDays * 11.86;
+    return((jupiterYear * 24) / 51432.48).toFixed(2);
+  }
 
 
 
