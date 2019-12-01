@@ -54,11 +54,11 @@ export class AgeCalculator {
       }
     }
 
-//   Mars() {
-//     const earthYearDays = 365;
-//     let marsYear = earthYearDays * 1.88;
-//     return ((marsYear * 24) / 1296.76).toFixed(1);
-//   }    
+  MarsYears() {
+    const age = this.currentYear - this.birthYear;
+    const marsAge = age / 1.88;
+    return marsAge.toFixed(2);
+  }    
 
 //   Jupiter() {
 //     const earthYearDays = 365;

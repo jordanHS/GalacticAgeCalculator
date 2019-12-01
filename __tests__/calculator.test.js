@@ -37,7 +37,7 @@ describe('AgeCalculator', () => {
   });
   test('should convert the users age into mars years', function () {
     var ageCalculator = new AgeCalculator(2019, 1995);
-    expect(ageCalculator.MarsYears()).toEqual(12.77);
+    expect(ageCalculator.MarsYears()).toEqual("12.77");
   });
 });
 
